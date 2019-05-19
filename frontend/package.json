@@ -9,6 +9,7 @@
     "test": "echo \"Error: no test specified\" && exit 0",
     "lint": "tslint -p tsconfig.json -c tslint.json",
     "build": "parcel build --no-minify --log-level 4 --out-dir target --cache-dir .cache index.html",
+    "nohmr": "parcel serve --out-dir .serve --port 8080 --no-hmr index.html",
     "develop": "parcel serve --out-dir .serve --cache-dir .cache --port 8080 --hmr-port 43569 index.html"
   },
   "author": "Stabelo tech <tech@stabelo.se>",
