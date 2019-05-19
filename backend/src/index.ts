@@ -4,7 +4,7 @@ import * as cors from "kcors";
 
 import * as Router from "koa-router";
 
-let elevatorState = {
+const elevatorState = {
   floors: [
     {floor: -2, requesting: false},
     {floor: -1, requesting: false},
@@ -29,10 +29,10 @@ let elevatorState = {
   ],
   elevators: [
     {no: 5040, idle: true, destination: 2, floor: 2},
-    //{no: 42, idle: true, destination: 1, floor: 1},
-    //{no: 3, idle: true, destination: 15, floor: 15},
-    //{no: 1008, idle: true, destination: 7, floor: 7},
-    //{no: 9001, idle: true, destination: 8, floor: 8},
+    {no: 42, idle: true, destination: 1, floor: 1},
+    {no: 3, idle: true, destination: 15, floor: 15},
+    {no: 1008, idle: true, destination: 7, floor: 7},
+    {no: 9001, idle: true, destination: 8, floor: 8},
   ]
 }
 
